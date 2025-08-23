@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title and description -->
+    <title>Contact us</title>
+    <meta name="description" content="Contact us and take your first step towards dominating your market!">
+
+    <!-- meta data -->
+    <link rel="shortcut icon" href="../src/assets/favicon.png" type="image/x-icon">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/src/css/output.css">
+
+    <!-- js -->
+    <script defer src="/src/js/index.js"></script>
+    <script defer src="/src/js/observer.js"></script>
+    <script defer src="/src/js/form-submission.js"></script>
+</head>
+<body class="grid justify-center overflow-x-hidden ">
+    <!-- nav bar -->
+    <header class="w-screen bg-silver">
+    <!-- seprate navbar for mobiles -->
+    <div id="mob-nav" class="mobile-only-nav w-full md:hidden hidden bg-silver transition-all duration-[1.2s] pt-8 pb-8">
+        <div class="nav-links  md:flex items-center ">
+            <ul class="w-full flex gap-9 font-normal flex-col items-center ">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#Service">Service</a></li>
+                <li><a href="/#Feature">Feature</a></li>
+                <li><a href="/#testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="nav-cta flex gap-4 w-full justify-center mt-4">
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text  md:block " href="/Contact/">Contact us</a>
+        </div>
+    </div>
+    
+    <!-- navbar -->
+    <nav class="flex lg:w-full justify-between p-7">
+        <!-- logo for branding -->
+        <div class="logo flex items-center">
+            <a href="">
+                <img src="/src/assets/nexcent-logo-black.png" alt="nexcent-logo">
+            </a>
+        </div>
+
+        <!-- links for navigation -->
+        <div class="nav-links hidden  md:flex items-center ">
+            <ul class=" flex gap-9 font-normal ">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#Service">Service</a></li>
+                <li><a href="/#Feature">Feature</a></li>
+                <li><a href="/#testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+
+        <!-- call to action button -->
+        <div class="nav-cta flex gap-4 ">
+            <a class="text-white bg-brand_primary pr-4 pl-4 pt-2 pb-2 rounded-sm text hidden md:block" href="/Contact/">Contact us</a>
+        </div>
+
+
+        <div class="reponsive-hamburger-toggler md:hidden ">
+            <button id="nav-toggle-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
+        </div>
+
+    </nav>
+    </header>
+
+    <!-- main form and decoration  -->
+    <main class=" w-screen min-h-[70vh] bg-silver flex justify-evenly flex-wrap">
+        <!-- form container -->
+        <div class="form-container w-[95%] md:w-[45%] ">
+            <!-- form  -->
+            <form class="flex flex-wrap gap-4 justify-center items-center rounded-lg p-4" id="form">
+                <!-- heading -->
+                <h1 class="text-4xl text-brand_primary font-semibold text-center">Your first step towards success, Nexcent</h1>
+
+                <!-- tags to provide data to Web3Forms (form submission Service) -->
+                <input type="hidden" name="access_key" value="34099478-b2e7-47fd-ac8d-bd4560f36e38">
+                <input type="hidden" name="subject" value="New client from Nexcent">
+
+                <!-- first name -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="First Name"  autocomplete="given-name" name="First name" required> 
+                <!-- last name -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Last Name"  autocomplete="family-name" name="Last name" required>
+                <!-- email  -->
+                <input type="email" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Email" autocomplete="email" name="Email" required>
+                
+                <!-- Business name  -->
+                <input type="text" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver"  placeholder="Business Name" autocomplete="organization" name="Business name" required>
+                
+                <!-- phone number  -->
+                <input type="tel" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Phone number" autocomplete="tel" name="ph no:" required>
+                
+                <!-- website  -->
+                <input type="url" class="pl-4 w-[46%] rounded h-12 border-[1px] border-d_grey bg-silver" placeholder="Website (optinal)" name="website">
+    
+                <!-- budget  -->
+                <select  name="budget" id="" class="text-d_grey pr-4 pl-4 w-[95%] rounded h-12 border-[1px] bg-silver border-d_grey ">
+                   <option value="" class="text-d_grey" disabled selected>Select your budget</option>
+    
+                   <option value="$500 or less"> $500 or less </option>
+                   <option value="$1000 - $2000"> $1000 - $2000 </option>
+                   <option value="$3000+"> $3000+</option>
+                </select>
+
+                
+
+                <!-- submit  -->
+                <input  id="result" type="submit" value="Start your success story" class="w-[95%] bg-brand_primary text-white h-[3rem] rounded">
+            </form>
+        </div>
+        <!-- img -->
+        <div class="w-[95%] md:w-[45%]">
+            <img src="/src/assets/illustrations/goals.svg" alt="Goals image">
+        </div>
+    </main>
+
+        <!-- footer-->
+    <footer class="min-h-80 w-screen flex bg-brand_black text-white items-center justify-center md:justify-center flex-col md:flex-row gap-12 md:gap-0">
+        <!-- brand and copyright -->
+        <div class="grid gap-3 w-[100%] justify-center md:w-[55%] md:justify-start">
+
+            <!-- brand icon -->
+            <img src="/src/assets/nexcent-logo-white.png" alt="Nexcent" class="w-44">
+
+            <p>Copyright &copy; <span id="footer_current_year"></span> Nexcent ltd. <br> All rights reserved</p>
+        </div>
+
+        <!-- email newsletter -->
+        <div class="grid gap-4">
+            <h1 class="font-semibold text-xl text-center">Stay up-to date</h1>
+            
+            <form class="flex gap-3 p-3  flex-col" id="form_email" onsubmit=" document.getElementById('form_email_message').classList.remove('hidden'); this.reset(); return false">
+                <div class="flex rounded-md p-3 bg-d_grey">
+
+                    <input required class="focus-visible:outline-none bg-d_grey" placeholder="Your email address" type="email" name="email_inp" id="">
+                    <button id="form_email_submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                            </svg>
+                    </button>
+                </div>
+
+                <input id="form_email_message" type="text"  class="text-brand_primary bg-brand_black font-semibold text-xl hidden focus-visible:outline-none" name="message" readonly value="Thank you for submission!">
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
